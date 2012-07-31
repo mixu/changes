@@ -1,0 +1,10 @@
+{
+  "name": "changes",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Mikito Takada",
+  "dependencies": {
+    "mixu_minimal": "git://github.com/mixu/minimal.git",
+    "semver": "~1.0.14"
+  }
+}
