@@ -5,7 +5,7 @@ A tool for checking what the status of your own npm modules is.
 ## Why?
 
 - I always forget to update my npm packages and I refuse to manually track my ```npm publish``` invocations.
-- changes takes your Github repo commits (via the GH API) and your npm package versions (via the npm API), and creates a log that you can check.
+- changes takes your Github repo commits (via the GH API) and your npm package versions (via the npm API), and creates a log that you can check. Mostly based on https://github.com/dylang/changelog
 
 ## Usage
 
@@ -24,7 +24,7 @@ Output:
 
     gluejs
     unreleased      2012-07-31
-      Spec out the new group responsibilities. Move the render() and watch() tasks to Glue so that file groups can focus on what they do best
+      Spec out the new group responsibilities.
       Initial support for multiple packages in one
       ... +21 commits ...
     0.0.2           2012-05-25
