@@ -1,7 +1,7 @@
 var fs = require('fs'),
     Fetch = require('./lib/fetch.js');
 
-var tracked = require('config.js');
+var tracked = require('./config.json');
 
 tracked.forEach(function(item) {
   Fetch.getCommits(item.user, item.repo, function(data) {
