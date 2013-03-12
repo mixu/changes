@@ -33,14 +33,13 @@ tracked.forEach(function(item) {
   Object.keys(items).sort(semver.rcompare).forEach(function(tag) {
     var version = items[tag];
     console.log(style((tag+'          ').substr(0, 14), 'yellow') + '\t' + style(fmt.yyyymmdd(version.date), 'green'));
-    version.commits.slice(0, 2).forEach(function(l) {
+    var show = version.commits.splice(0, 19);
+    show.forEach(function(l) {
       console.log('  '+l.split('\n').slice(0, 1));
     });
 
-    if(version.commits.length == 3) {
-      console.log('  '+version.commits[2].split('\n').slice(0, 1));
-    } else {
-      console.log(style('  ... +'+version.commits.length+' commits ...', 'grey'));
+    if(version.commits.length > 0) {
+      console.log(style('  ... +'+ version.commits.length +' commits ...', 'grey'));
     }
 
   });
