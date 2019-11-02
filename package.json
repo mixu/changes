@@ -5,6 +5,6 @@
   "author": "Mikito Takada",
   "dependencies": {
     "mixu_minimal": "git://github.com/mixu/minimal.git",
-    "semver": "~1.0.14"
+    "semver": "~6.3.0"
   }
 }
